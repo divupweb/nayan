@@ -210,7 +210,7 @@
     </div>
   </div>
  </div>
- <div class="dm-overlay" id="win6">
+ <div class="dm-overlay" id="licenses">
    <div class="dm-table">
     <div class="dm-cell">
      <div class="dm-modal">
