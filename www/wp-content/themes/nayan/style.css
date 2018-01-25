@@ -383,12 +383,12 @@ video
     z-index: -1;
     width: 100%;
 }
-.block4_href_1
+.feedback-block__href-1
 {
     color: #1F821F;
     background-color: #dbebd9;
 }
-.block4_href_2
+.feedback-block__href-2
 {
     color: white;
     background-color:#2C801E;

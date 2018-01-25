@@ -119,8 +119,8 @@
        <h3>МЫ УЖЕ ГОТОВЫ НАЧАТЬ РАБОТАТЬ НАД ВАШЕЙ КОМПАНИЕЙ.</h3>
        <h3>А ВЫ?</h3>
        <form method="post">
-        <a class="block4_href_1" href="#feedback">остались вопросы</a> 
-        <a class="block4_href_2 dop_pad" href="#feedback-form">хочу попробовать</a> 
+        <a class="feedback-block__href-1" href="#feedback">остались вопросы</a> 
+        <a class="feedback-block__href-2 dop_pad" href="#feedback-form">хочу попробовать</a> 
        </form>  
       </div>
      </div>

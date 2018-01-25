@@ -5,8 +5,8 @@
    <header class="top-line">
     <img src="<?php bloginfo("template_directory");?>/images/top_line/logotype.png" alt="Логотип">
     <form method="post">
-     <a href="#win1">ЗАКАЗАТЬ ЗВОНОК</a> 
-    </form>  
+     <a href="#feedback">ЗАКАЗАТЬ ЗВОНОК</a> 
+    </form> 
     <span>
      <?php if ( have_posts() ) : query_posts('p=5');while (have_posts()) : the_post(); ?>
       <?php the_content(); ?>
@@ -14,10 +14,8 @@
     </span>
    </header>
    <menu id="top_nav" class="menu">
-    <div class="menu-button" onCLick="hide_show()">
-     <img src="<?php bloginfo("template_directory");?>/images/menu.png" alt="Icon">
-    </div>
-    <div onCLick="hide_show2()"><ul id="menu-top-menu"><li><a href="http:\\nayan.by">На главную</a></li></ul></div>
+    <div class="menu__button" onCLick="hide_show()">≡</div>
+    <div onCLick="hide_showView()"><ul id="menu-top-menu"><li><a href="http:\\nayan.by">На главную</a></li></ul></div>
    </menu>
    <div class="page-align">
     <div class="clr"></div>
@@ -35,16 +33,16 @@
       С уважением служба поддержки интернет-ресурса: nayan.by
      </div>
      <?php $wp_query = new WP_Query(); $wp_query->query('paged='.$paged);?>
-     <div class="block-5">
-      <div class="block-5__content">
+     <div class="contacts-block">
+      <div class="contacts-block__content">
        <HR WIDTH="100%" SIZE="0" color="#8ABB00">
        <?php if ( have_posts() ) : query_posts('p=34');while (have_posts()) : the_post(); ?>
-        <span><?php the_title();?></span><br>
+        <span><?php the_title();?></span>
         <?php the_content(); ?>
        <? endwhile; endif; wp_reset_query(); ?>
       </div>
      </div>
-     <div class="block-6">
+     <div class="map-block">
       <?php echo do_shortcode("[huge_it_maps id='1']"); ?>
      </div>
     </main>
